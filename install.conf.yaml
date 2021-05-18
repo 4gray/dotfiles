@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.i3/config: .i3/config
+    ~/.i3/unspla.sh: .i3/config/unspla.sh
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
